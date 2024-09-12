@@ -1,0 +1,28 @@
+:root{
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Background: hsl(185, 75%, 39%);
+    --Titles: hsl(229, 23%, 23%);
+    --TextColor: hsl(227, 10%, 46%);
+
+    /* ### Neutral */
+
+    --Details: hsl(0, 0%, 59%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --NameAndStats: 18px;
+    --TextSize: 14px;
+
+    /* ### Font */
+
+    --Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans);
+    --Weights: 400, 700;
+
+
+}

@@ -1,0 +1,142 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Background);
+    overflow: hidden;
+}
+.container::before{
+    content: '';
+    display: inline-block;
+    background: url(../images/bg-pattern-top.svg) no-repeat center;
+    width: 978px;
+    width: 978px;
+    height: 978px;
+    margin-right: 50px;
+
+    position: absolute;
+    top: calc(-50% + 40px);
+    left: -50px;
+
+    z-index: -2;
+}
+.container::after{
+    content: '';
+    display: inline-block;
+    background: url(../images/bg-pattern-bottom.svg) no-repeat center;
+    max-width: 978px;
+    height: 978px;
+
+    position: absolute;
+    bottom: calc(-55%);
+    right: -50px;
+
+    z-index: -1;
+}
+
+
+/* .topPattern{
+    max-width: 978px;
+    max-height: 978px;
+    position: relative;
+    align-self: center;
+    top: calc(-50% + 40px);
+    left: 0;
+    margin-right: 50%;
+
+
+    z-index: -1;
+} */
+
+
+/* Card stylization */
+.card{
+    background-color: #fff;
+    max-width: 350px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 16px;
+    
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: var(--TextSize);
+    color: var(--TextColor);
+}
+.card-header{
+    display: flex;
+    position: relative;
+}
+.card-header .cardBgImage{
+    width: 100%;
+
+    border-radius: 16px 16px 0 0;
+}
+.card-header::before{
+    content: '';
+    display: flex;
+    background: url(../images/image-victor.jpg) no-repeat center;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: calc(100% - 48px - 5px);
+    left: calc(50% - 48px - 5px);
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+/* Card Section stylization */
+.card .profileMain{
+    margin-top: 70px;
+}
+
+.profileMain .name{
+    font-size: var(--NameAndStats);
+    color: var(--Titles);
+    line-height: 2;
+}
+.profileMain .name span{
+    font-weight: 400;
+}
+
+.profileMain .location{
+    font-size: var(--TextSize);
+    font-weight: 400;
+}
+
+/* Card Stats stylization */
+.profileStats{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 25px;
+    padding: 25px 0;
+    border-top: 1px solid var(--Details);
+}
+.profileStats .stats dt{
+    color: var(--Titles);
+    font-size: var(--NameAndStats);
+    font-weight: 700;
+    line-height: 2;
+}
+.profileStats .stats dd{
+    font-size: 12px;
+}
+
+/* Footer */
+.footer{
+    margin-top: auto;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
