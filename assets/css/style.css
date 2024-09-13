@@ -1,120 +1,93 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: 100vh;
+    width: 100%;
     
     align-items: center;
     justify-content: center;
 
+    position: relative;
     background-color: var(--Background);
     overflow: hidden;
 }
-.container::before{
-    content: '';
-    display: inline-block;
-    background: url(../images/bg-pattern-top.svg) no-repeat center;
-    width: 978px;
+
+.topPattern{
+    position: absolute;
+    background: url(../images/bg-pattern-top.svg) no-repeat;
+    background-size: contain;
     width: 978px;
     height: 978px;
-    margin-right: 50px;
-
-    position: absolute;
-    top: calc(-50% + 40px);
-    left: -50px;
+    top: -528px;
+    left: 0px;
 
     z-index: -2;
 }
-.container::after{
-    content: '';
-    display: inline-block;
-    background: url(../images/bg-pattern-bottom.svg) no-repeat center;
-    max-width: 978px;
-    height: 978px;
-
+.bottomPattern{
     position: absolute;
-    bottom: calc(-55%);
-    right: -50px;
+    background: url(../images/bg-pattern-bottom.svg) no-repeat;
+    background-size: contain;
+    width: 978px;
+    height: 978px;
+    bottom: -528px;
+    right: 0px;
 
     z-index: -1;
 }
 
 
-/* .topPattern{
-    max-width: 978px;
-    max-height: 978px;
-    position: relative;
-    align-self: center;
-    top: calc(-50% + 40px);
-    left: 0;
-    margin-right: 50%;
-
-
-    z-index: -1;
-} */
-
-
 /* Card stylization */
+
 .card{
     background-color: #fff;
     max-width: 350px;
-    text-align: center;
+    position: relative;
+    
     margin: 20px;
     border-radius: 16px;
     
+    text-align: center;
     font-family: "Kumbh Sans", sans-serif;
     font-size: var(--TextSize);
     color: var(--TextColor);
 }
-.card-header{
-    display: flex;
-    position: relative;
-}
-.card-header .cardBgImage{
+.card-BgImage{
     width: 100%;
-
     border-radius: 16px 16px 0 0;
 }
-.card-header::before{
-    content: '';
-    display: flex;
-    background: url(../images/image-victor.jpg) no-repeat center;
+.profileImage{
     width: 96px;
-    height: 96px;
-    position: absolute;
-    top: calc(100% - 48px - 5px);
-    left: calc(50% - 48px - 5px);
-
     border-radius: 50%;
     border: 5px solid #fff;
-}
 
-/* Card Section stylization */
-.card .profileMain{
-    margin-top: 70px;
+    position: relative;
+    bottom: 52px;
 }
-
-.profileMain .name{
+.profile{
+    position: relative;
+    top: -40px;
+}
+.name{
     font-size: var(--NameAndStats);
     color: var(--Titles);
     line-height: 2;
 }
-.profileMain .name span{
+.name span{
     font-weight: 400;
 }
-
-.profileMain .location{
+.location{
     font-size: var(--TextSize);
     font-weight: 400;
 }
 
+
 /* Card Stats stylization */
+
 .profileStats{
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0;
     
-    margin-top: 25px;
-    padding: 25px 0;
     border-top: 1px solid var(--Details);
 }
 .profileStats .stats dt{
@@ -127,16 +100,16 @@
     font-size: 12px;
 }
 
+
 /* Footer */
-.footer{
-    margin-top: auto;
-}
+
 .attribution {
     font-size: 11px;
     text-align: center;
-    color: #fff;
+    color: white;
 }
 
 .attribution a{
-    color: hsl(228, 45%, 44%);
+    color: bisque;
+    text-decoration: none;
 }
