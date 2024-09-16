@@ -1,5 +1,5 @@
 :root{
-
+    
     /* ## Colors */
 
     /* ### Primary */
@@ -16,8 +16,8 @@
 
     /* ### Body Copy */
 
-    --NameAndStats: 18px;
-    --TextSize: 14px;
+    --NameAndStats: 1.8em;
+    --TextSize: 1.4em;
 
     /* ### Font */
 
